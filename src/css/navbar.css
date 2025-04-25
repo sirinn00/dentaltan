@@ -1,0 +1,105 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #0d47a1;
+}
+
+.navbar-left img {
+    width: 36px;
+    height: 36px;
+}
+
+.tooth-logo {
+    font-size: 32px;
+    color: #00b0ff;
+    transition: transform 0.3s ease;
+}
+
+.tooth-logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar-left .blue-text {
+    color: #00b0ff;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar-center a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 8px 0;
+}
+
+.navbar-center a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00b0ff;
+    transition: width 0.3s ease;
+}
+
+.navbar-center a:hover {
+    color: #00b0ff;
+}
+
+.navbar-center a:hover::after {
+    width: 100%;
+}
+
+.contact-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0.95;
+}
+
+.contact-icon {
+    font-size: 16px;
+}
+  
